@@ -8,6 +8,30 @@ body{
 header{
     background-color: #d1e3ee;
 }
+header nav{
+    background-color: #026dc6;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 2px 0px;
+    width: 99%;
+}
+header nav form{
+    float: right;
+    margin-right: 10px;
+}
+header nav form input{
+    border-radius: 5px;
+}
+header nav form input[type="submit"]{
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+}
+header nav ul li{
+    color: white;
+    display: inline-block;
+    margin-left: 20px;
+}
 #logo{
     margin: -150px 0 0 0;
 }
