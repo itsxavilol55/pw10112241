@@ -35,3 +35,35 @@ header nav ul li{
 #logo{
     margin: -150px 0 0 0;
 }
+#section1{
+    margin-top: 15px;
+}
+#section1 article{
+    text-align: center;
+}
+#section1 article img{
+    width: 98%;
+    border: 2px solid rgba(150, 150, 150, 0.4);
+}
+#section2 article {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+#section2 article input[type="submit"]{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: #026dc6;
+    width: 30%;
+    margin-left: 35%;
+}
+.nito {
+    font-weight: bold;
+}
+.otraSection{
+    font-size: 2.5em;
+}
+.unaSection{
+    font-size: 4.5em;
+}
