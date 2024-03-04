@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Práctica 02 CSS</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header>
         <img src="img/banner.png" alt="Linea">
-        <img src="img/granthams.png" alt="granthams">
-        <img src="img/paint.png" alt="pintura">
+        <img src="img/granthams.png" id="granthams" alt="granthams">
+        <img src="img/paint.png" id="paint" alt="pintura">
         <input type="search" placeholder="Search" size="25">
         <nav>
             <ul>
@@ -21,12 +22,12 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <article>
+    <section id="primerseccion">
+        <article id="secc01art01">
             <img src="img/slide.jpg" alt="Slide">
         </article>
-        <article>
-            We can offer
+        <article id="secc01art02">
+            <span class="letragrande colorrosa nito"> We can offer</span>
             <ul>
                 <li>Highly Competitive Prices</li>
                 <li>Variable data</li>
@@ -40,38 +41,38 @@
         </article>
         <img src="img/bg_offer.png" alt="Ofertas">
     </section>
-    <section>
+    <section id="segundaseccion">
         <article>
-            12131 892282
+            <span class="letramediana colorrosa nito"> 12131 892282</span>
         </article>
     </section>
-    <section>
+    <section id="terceraseccion">
         <article>
             <img src="img/cerdito.png" alt="Piggy">
-            Save This Spring
+            <span class="colorrosa nito"> Save This Spring </span>
             <br>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat neque nobis facilis doloribus laboriosam sunt veniam modi voluptates in commodi, beatae optio deleniti! Veritatis laborum optio nobis amet ut autem?
             <p></p>
-            Find out more...
+            <span class="colorrosa"> Find out more...</span>
         </article>
         <article>
             <img src="img/hoja.png" alt="Hoja">
-            Eco Friendly
+            <span class="colorverde nito">  Eco Friendly</span>
             <br>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellat, necessitatibus, quo, non ratione nisi id beatae aliquid nihil sequi eos modi ducimus atque! Unde placeat labore nostrum accusamus eveniet?       
         </article>
         <article>
             <img src="img/new.png" alt="Nuevo">
-            Upload your file
+            <span>Upload your file</span>
             <br>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat neque nobis facilis doloribus laboriosam sunt veniam modi voluptates in commodi, beatae optio deleniti! Veritatis laborum optio nobis amet ut autem?
             <p></p>
-            Upload your file now...
+            <span>Upload your file now...</span>
         </article>
         <article>
-            Stay in touch
+            <span>Stay in touch</span>
             <br>
-            Join our mailing list today
+            <span>Join our mailing list today</span>
             <input type="mail" placeholder="Email aqui">
             <input type="button" value="Send">
         </article>
