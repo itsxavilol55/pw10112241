@@ -13,6 +13,19 @@ body{
     margin: 0 auto;
     max-width: 1024px;
 }
+footer article {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    vertical-align: top;
+    width: 30%;
+}
+footer img{
+    width: 300px;
+}
+header ul{
+    margin-left: -40px;
+}
 header ul li{
     display: inline-block;
     width: 17%;
@@ -32,12 +45,20 @@ header ul li:nth-child(4) {
 header ul li:nth-child(5) {
     background-color: var(--color-gris);
 }
+hr{
+    border-style: dashed;
+    color: var(--color-linea);
+}
+section{
+    align-items: end;
+}
 section article{
     display: inline-block;
     height: 280px;
-    padding: 18px 8px;
+    padding: 18px 10px;
     vertical-align: top;
-    width: 17.9%;
+    width: 18%;
+    margin-left: -4px;
 }
 section article ul {
     list-style: none;
@@ -73,5 +94,8 @@ section img {
     font-size: 1.2em;
 }
 .tam-tarjetas{
-    font-size: 1.7em;
+    font-size: 1.6em;
+}
+.read-more{
+    margin-left: 220px;
 }
