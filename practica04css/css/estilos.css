@@ -1,0 +1,15 @@
+body{
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+header nav ul li {
+    display: inline-block;
+    padding-right: 10px;
+}
+#banderas{
+    float: right;
+}
+#bikelogo{
+    margin: 20px;
+}
