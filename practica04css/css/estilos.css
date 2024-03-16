@@ -3,13 +3,35 @@ body{
     margin: 0 auto;
     max-width: 1024px;
 }
+header nav ul {
+    padding: 0 20px;
+    padding-bottom: 40px;
+}
 header nav ul li {
     display: inline-block;
-    padding-right: 10px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+hr{
+    border-style: dashed;
+    color: #888;
 }
 #banderas{
     float: right;
 }
 #bikelogo{
     margin: 20px;
+}
+#buyandshop{
+    position: relative;
+    float: right;
+    width: 250px;
+    left: 20px;
+    top: 30px;
+}
+#goto{
+    position: relative;
+    width: 200px;
+    left: 60px;
+    top: 10px;
 }
