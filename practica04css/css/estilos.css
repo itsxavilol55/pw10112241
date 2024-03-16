@@ -16,6 +16,18 @@ hr{
     border-style: dashed;
     color: #888;
 }
+footer article{
+    width: 17%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+footer article ul{
+    padding: 0;
+}
+footer article ul li{
+    list-style: none;
+}
 #banderas{
     float: right;
 }
@@ -29,9 +41,49 @@ hr{
     left: 20px;
     top: 30px;
 }
+#bici5Y{
+    position: relative;
+    float: right;
+    width: 0px;
+    top: -350px;
+}
 #goto{
     position: relative;
     width: 200px;
     left: 60px;
     top: 10px;
+}
+#mainpanel{
+    width: 53%;
+}
+#mainpanel hr{
+    width: 95%;
+}
+#videos{
+    display: inline-block;
+}
+#videos img{
+    width: 48%;
+}
+#socialmedia{
+    padding: 50px 0;
+}
+#socialmedia span{
+    width: 700px;
+    vertical-align: top;
+}
+#years5{
+    position: relative;
+    width: 150px;
+    top: -110px;
+}
+.letragrande{
+    font-size: 5em;
+    font-weight: bolder;
+}
+.letraverde{
+    color: #4f4;
+}
+.info{
+    padding: 30px 2px; 
 }
