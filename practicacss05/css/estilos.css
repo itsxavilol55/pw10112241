@@ -1,0 +1,56 @@
+body{
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 1024px;
+    background-color: #efefef;
+}
+header{
+    background-color: #235d92;
+    text-align: center;
+}
+header img{
+    width: 230px;
+}
+#menuarriba{
+    margin-left: 65%;
+}
+#menuarriba article {
+    background-color: #efefef;
+    vertical-align: baseline;
+    width: 100%;
+}
+#menuarriba article img{
+    width: 100px;
+}
+#links, #progress{
+    width: 30%;
+    margin: 15px;
+}
+#links article, #progress article{
+    background-color: #235d94;
+    display: inline-block;
+    width: 100%;
+}
+#links article span, #progress article span{
+    font-size: 1.1em;
+    color: white;
+}
+#links article img, #progress article img{
+    vertical-align: middle;
+}
+#links nav{
+    background-color: #15416a;
+}
+#links nav ul{
+    margin: 0;
+    list-style: none;
+    padding: 5px 0;
+    padding-left: 20px;
+}
+#links nav ul li{
+    padding: 6px 0;
+    color: white;
+}
+#progress{
+
+}
