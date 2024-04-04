@@ -1,0 +1,90 @@
+body{
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 1024px;
+    background-color: rgb(236, 224, 224);
+}
+h1{
+    color: white;
+    font-size: 6em;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 6px;
+}
+header{
+    padding-top: 50px;
+    text-align: center;
+}
+header > span{
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+    color: #522d27;
+}
+li{
+    display: inline-block;
+    font-weight: 600;
+    padding: 2px 20px;
+    color: #522d27;
+}
+table{
+    width: 100%;
+    margin: 10px 0;
+}
+tr > td:nth-child(2){
+    text-align: right;
+    font-weight: 800;
+}
+td {
+    text-align: left;
+}
+main{
+    text-align: center;
+}
+hr{
+    background-color: #522d27;
+    height: 1px;
+    border: none;
+}
+.info{
+    padding: 40px 80px;
+}
+#sect2,#sect3{
+    display: inline-block;
+    width: 42%;
+    vertical-align: top;
+    margin: 0 15px;
+}
+#sect2 > article{
+    background-color: #522d27;
+    border: 10px solid white;
+    padding: 10px;
+    height: 200px;
+}
+#sect3 > article{
+    background-color: #e6e0ef;
+    border: 10px solid white;
+    padding: 10px;
+    height: 200px;
+}
+#sect2 h2{
+    font-size: 2.95em;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    margin: 15px 0;
+}
+#sect2 span{
+    font-size: 0.9em;
+    color: white;
+}
+#sect3 h2{
+    font-size: 3.5em;
+    color: rgb(255, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    margin: 5px 0;
+    padding: 0;
+}
+#sect3 span{
+    font-size: 1.2em;
+}
