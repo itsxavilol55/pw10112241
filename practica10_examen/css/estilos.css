@@ -1,0 +1,70 @@
+body{
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 1024px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 3em;
+    margin: 20px 0;
+}
+h2{
+    font-size: 2.3em;
+    margin-bottom: 90px;
+}
+header{
+    padding: 10px 10px;
+}
+header nav{
+    margin-left: 50px;
+    margin-right: 180px;
+}
+header nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+header > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+input{
+    width: 80%;
+    border: none;
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+#sec1 > article{
+    width: 55%;
+    display: inline-block;
+}
+#sec1 > article > article{ 
+    margin-top: 30px;
+}
+#sec1 > img {
+    width: 35%;
+    display: inline-block;
+    margin: 50px 0;
+    margin-left: 90px;
+}
+#sec1 > *{
+    vertical-align: top;
+    margin-top: 40px;
+}
+#sec2 > article{
+    display: inline-block;
+    width: 20%;
+}
+.btnBlanco{
+    background-color: white;
+    border: 1px solid red;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: red;
+}
+.btnRojo{
+    background-color: red;
+    border: 1px solid red;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+}
