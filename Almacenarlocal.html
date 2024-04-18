@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local and seccion storage</title>
+</head>
+<body>
+    <div id="demo">0</div>
+    <button onclick="aumentar()">Contador</button>
+    <button onclick="restar()">Restar</button>
+    <button onclick="reiniciar()">Reinicia</button>
+    <button onclick="eliminar()">Elimina Contador</button>
+    <script>
+        const imprimir = function(dato){
+            document.getElementById('demo').innerHTML = dato;
+        }
+        const aumentar = function(){
+            localStorage.cuenta++;
+            imprimir(localStorage.cuenta);
+        }
+        const restar = function(){
+            localStorage.cuenta--;
+            imprimir(localStorage.cuenta);
+        }
+        const reiniciar = function(){
+            localStorage = 0;
+            imprimir(localStorage.cuenta);
+        }
+        const eliminar = function(){
+            localStorage.removeItem('cuenta');
+            imprimir(localStorage.cuenta);
+        }
+        if(typeof(Storage)!= "undefined")
+        {
+            if(localStorage.cuenta){
+                imprimir(localStorage.cuenta);
+            }
+            localStorage.cuenta = 0;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soltar Y arrastrar</title>
+    <style>
+        #div1, #div2 {
+            float: left;
+            border: 1px solid black;
+            height: 220px;
+            margin: 10px;
+            padding: 20px;
+            width: 220px;
+        }
+    </style>
+</head>
+<body>
+    <h2>soltar y arrastrar</h2>
+    <div id="div1" ondragover="allowDrop(event)" ondrop="drop(event)">
+        <img src="img/logo.png" id="arra1" height="50px" draggable="true" ondragstart="drag(event)">
+        <img src="img/logo.png" id="arra2" height="50px" draggable="true" ondragstart="drag(event)">
+        <img src="img/logo.png" id="arra3" height="50px" draggable="true" ondragstart="drag(event)">
+        <img src="img/logo.png" id="arra4" height="50px" draggable="true" ondragstart="drag(event)">
+    </div>
+    <div id="div2" ondragover="allowDrop(event)" ondrop="drop(event)">
+
+    </div>
+</body>
+</html>
