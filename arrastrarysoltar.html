@@ -26,5 +26,18 @@
     <div id="div2" ondragover="allowDrop(event)" ondrop="drop(event)">
 
     </div>
+    <script>
+        function drop(event){
+            event.preventDefault();
+            var data = event.dataTransfer.getData('texto');
+            event.target.appendChild(document.getElementById(data));
+        }
+        function allowDrop(event){
+            event.preventDefault();
+        }
+        function drag(event){
+            event.dataTransfer.setData('texto',event.target.id);
+        }
+    </script>
 </body>
 </html>
