@@ -17,14 +17,14 @@ let conexion = mysql.createConnection(
 );
 conexion.connect(function(error){
     if(error)
-        console.log('hubo un error');
+        throw error;
     else
         console.log('conectado a la base de datos');
 });
 app.get('/api/clientes/',(req,res)=>{
     conexion.query('select * from clientes',(error,fila)=>{
         if(error)
-        console.log('hubo un error al pedir datos');
+        throw error;
     else
         res.send(fila)
     });
@@ -33,7 +33,7 @@ app.get('/api/clientes/:id',(req,res)=>{
     conexion.query('select * from clientes where id=?',[req.params.id],
     (error,fila)=>{
         if(error)
-        console.log('hubo un error al pedir datos');
+        throw error;
     else
         res.send(fila)
     });
@@ -42,7 +42,7 @@ app.delete('/api/clientes/:id',(req,res)=>{
     conexion.query('delete from clientes where id=?',[req.params.id],
     (error,fila)=>{
         if(error)
-        console.log('hubo un error al pedir datos');
+        throw error;
     else
         res.send(fila)
     });
@@ -62,9 +62,27 @@ app.post('/api/clientes',(req,res)=>{
     conexion.query(sql,data,
     (error,resultado)=>{
         if(error)
-        console.log('hubo un error al pedir datos');
+        throw error;
     else
         res.send(resultado)
+    });
+});
+app.put('/api/clientes/:id',(req,res)=>{
+    let id = req.params.id;
+    let nombre = req.body.nombre;
+    let apellido = req.body.apellido;
+    let direccion = req.body.direccion;
+    let telefono = req.body.telefono;
+    let rfc = req.body.rfc;
+    let curp = req.body.curp;
+    let cp = req.body.cp;
+    let sql = "update clientes set nombre=?, apellido=?, direccion=?, telefono=?, rfc=?, curp=?, cp=? where id=?";
+    conexion.query(sql,[nombre, apellido, direccion, telefono, rfc, curp, cp, id],
+    (error,fila)=>{
+        if(error)
+        throw error;
+    else
+        res.send(fila)
     });
 });
 app.get("/",function(req,res){
