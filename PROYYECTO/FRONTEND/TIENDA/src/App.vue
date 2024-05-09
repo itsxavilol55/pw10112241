@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router';
+import { RouterView } from 'vue-router';
 import MenuView from './views/MenuView.vue';
 </script>
 
@@ -7,5 +7,7 @@ import MenuView from './views/MenuView.vue';
   <header>
     <MenuView></MenuView>
   </header>
+  <RouterView/>
+    
 </template>
 
