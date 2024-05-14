@@ -43,7 +43,7 @@ import { RouterLink } from 'vue-router';
                             Acciones
                         </th>
                     </thead>
-                        <tbody>
+                        <tbody v-if="clientes.length > 0">
                             <tr v-for="(cliente,index) in clientes" :key="index">
                                 <td>{{ cliente.id  }}</td>
                                 <td>{{ cliente.nombre  }}</td>
@@ -53,7 +53,16 @@ import { RouterLink } from 'vue-router';
                                 <td>{{ cliente.rfc  }}</td>
                                 <td>{{ cliente.curp  }}</td>
                                 <td>{{ cliente.cp  }}</td>
-                                <td>Editar &nbsp; borrar</td>
+                                <td>Editar &nbsp; 
+                                    <button class="btn btn-danger" @click="deleteCliente(cliente.id)">
+                                        Borrar
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody v-else>
+                            <tr>
+                                <td colspan="9" style="text-align: center;"> Sin Clientes</td>
                             </tr>
                         </tbody>
                 </table>
@@ -78,6 +87,13 @@ import { RouterLink } from 'vue-router';
             getClientes(){
                 axios.get('http://localhost:3000/api/clientes').then(res=>{
                     this.clientes = res.data;
+                });
+            },
+            deleteCliente(idcliente){
+                axios.delete('http://localhost:3000/api/clientes/'+idcliente).then(res=>{
+                    if(res.data.affectedRows > 0){
+                        this.getClientes();
+                    }
                 });
             }
         }
