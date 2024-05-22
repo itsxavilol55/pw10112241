@@ -53,7 +53,12 @@ import { RouterLink } from 'vue-router';
                                 <td>{{ cliente.rfc  }}</td>
                                 <td>{{ cliente.curp  }}</td>
                                 <td>{{ cliente.cp  }}</td>
-                                <td>Editar &nbsp; 
+                                <td>
+                                    <RouterLink 
+                                        :to="{path: '/clientes/'+cliente.id+'/edit'}" class="btn btn-success">
+                                        Editar
+                                    </RouterLink>
+                                    &nbsp; 
                                     <button class="btn btn-danger" @click="deleteCliente(cliente.id)">
                                         Borrar
                                     </button>
@@ -73,6 +78,7 @@ import { RouterLink } from 'vue-router';
 
 <script>
     import axios from 'axios';
+    import { RouterLink } from 'vue-router';
     export default {
         name: "ClientesView",
         data(){
