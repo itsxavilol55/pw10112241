@@ -21,6 +21,9 @@ import { RouterLink } from 'vue-router';
           <RouterLink class="navbar-brand" to="/Ventas">
             Ventas
           </RouterLink>
+          <RouterLink class="navbar-brand" to="/clientes/registro">
+            Registro
+          </RouterLink>
         </li>
       </ul>
     </div>
