@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink } from 'vue-router';
+import { validate } from 'vee-validate';
 </script>
 
 <template>
@@ -24,9 +24,43 @@ import { RouterLink } from 'vue-router';
           <RouterLink class="navbar-brand" to="/clientes/registro">
             Registro
           </RouterLink>
+          <RouterLink class="navbar-brand" to="/clientes/entrada">
+            Entrada
+          </RouterLink>
+          <button v-if="validado" @click="salidaSistema()" class="btn btn-primary">Salir</button>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 </template>
+<script>
+  import {getAuth, onAuthStateChanged, signOut} from 'firebase/auth';
+  import { RouterLink } from 'vue-router';
+  export default { 
+    name: "MenuView",
+    data(){
+      return{
+        validado: false,
+        auth: '',
+      }
+    },
+    mounted(){
+      this.auth = getAuth();
+      onAuthStateChanged(this.auth,(user)=>{
+        if(user){
+          this.validado = true;
+        }
+        else 
+          this.validado = false;
+      })
+    },
+    methods:{
+      salidaSistema(){
+        signOut(this.auth).then(()=>{
+          this.$router.push("/");
+        })
+      }
+    }
+  }
+</script>
